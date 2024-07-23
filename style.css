@@ -1,0 +1,67 @@
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.navigator {
+  color: rgb(66, 133, 244);
+  font-size: 15px;
+  text-align: right;
+}
+.navigator a {
+  margin-right: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+.navigator a:last-child {
+  margin-right: 0;
+}
+
+h1 {
+  font-size: large;
+  color: black;
+  font-family: sans-serif;
+}
+
+.search-forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-forms form {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.search-forms form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: black;
+  width: 100%;
+  align-items: left;
+}
+.search-forms form input[type=text] {
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  align-items: left;
+}
+.search-forms form input[type=submit] {
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: rgb(66, 133, 244);
+  color: white;
+  align-items: center;
+}
+.search-forms form input[type=submit]:hover {
+  background-color: #1266f1;
+}
+
+/*# sourceMappingURL=style.css.map */
