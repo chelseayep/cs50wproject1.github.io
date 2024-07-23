@@ -1,6 +1,6 @@
 body {
   font-size: 20px;
-  font: "Sofia", sans-serif;
+  font-family: "Sofia", sans-serif;
 }
 
 .navigator {
@@ -12,7 +12,6 @@ body {
   margin-right: 20px;
   color: inherit;
   text-decoration: none;
-  font: "Sofia", sans-serif;
 }
 .navigator a:last-child {
   margin-right: 0;
@@ -21,7 +20,6 @@ body {
 h1 {
   font-size: 30px;
   color: black;
-  font-family: "Sofia", sans-serif;
 }
 
 h3 {
@@ -33,19 +31,22 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font: "Sofia", sans-serif;
 }
 .search-forms form {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
+  max-width: 800px;
 }
 .search-forms form label {
-  display: block;
-  margin-bottom: 10px;
+  align-self: flex-start;
   font-size: 18px;
   color: black;
   width: 100%;
+  text-align: left;
 }
 .search-forms form input[type=text] {
   width: 100%;
@@ -59,12 +60,12 @@ h3 {
 }
 .search-forms form input[type=submit] {
   width: 200px;
-  height: 40px;
+  height: 30px;
   font-size: 16px;
   border-radius: 5px;
   background-color: rgb(66, 133, 244);
   color: white;
-  align-items: center;
+  cursor: pointer;
 }
 .search-forms form input[type=submit]:hover {
   background-color: #1266f1;
