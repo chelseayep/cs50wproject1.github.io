@@ -1,20 +1,22 @@
 $color: rgb(66, 133, 244);
-$font: sans-serif;
+$font: "Sofia", sans-serif;
 
 body { 
     font-size: 20px;
-    font-family: $font;
+    font: $font
 }
+
 
 .navigator {
     color: $color;
-    font-size: 15px;
+    font-size: 20px;
     text-align: right;
 
     a {
         margin-right: 20px; 
         color: inherit; 
         text-decoration: none; 
+        font: $font;
     }
 
     a:last-child {
@@ -23,9 +25,14 @@ body {
 }
 
 h1 {
-    font-size: large;
+    font-size: 30px;
     color: black;
     font-family: $font;
+}
+
+h3{ 
+    font-size: 20px;
+    color: red
 }
 
 .search-forms {
@@ -37,7 +44,7 @@ h1 {
         margin: 10px 0;
         display: flex;
         flex-direction: column;
-        
+        width: 100%;
 
         label {
             display: block;
@@ -45,18 +52,17 @@ h1 {
             font-size: 18px;
             color: black;
             width: 100%;
-            align-items: left;
         }
 
         input[type="text"] {
-            width: 50%;
+            width: 100%; 
+            max-width: 50%; 
             height: 30px;
             padding: 10px;
             font-size: 18px;
             border-radius: 5px;
             border: 1px solid #ccc;
             margin-bottom: 10px;
-            align-items: left;
         }
 
         input[type="submit"] {
@@ -67,6 +73,7 @@ h1 {
             background-color: $color;
             color: white;
             align-items: center;
+
 
             &:hover {
                 background-color: darken($color, 10%);

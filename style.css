@@ -1,26 +1,32 @@
 body {
   font-size: 20px;
-  font-family: sans-serif;
+  font: "Sofia", sans-serif;
 }
 
 .navigator {
   color: rgb(66, 133, 244);
-  font-size: 15px;
+  font-size: 20px;
   text-align: right;
 }
 .navigator a {
   margin-right: 20px;
   color: inherit;
   text-decoration: none;
+  font: "Sofia", sans-serif;
 }
 .navigator a:last-child {
   margin-right: 0;
 }
 
 h1 {
-  font-size: large;
+  font-size: 30px;
   color: black;
-  font-family: sans-serif;
+  font-family: "Sofia", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  color: red;
 }
 
 .search-forms {
@@ -32,6 +38,7 @@ h1 {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .search-forms form label {
   display: block;
@@ -39,17 +46,16 @@ h1 {
   font-size: 18px;
   color: black;
   width: 100%;
-  align-items: left;
 }
 .search-forms form input[type=text] {
-  width: 50%;
+  width: 100%;
+  max-width: 50%;
   height: 30px;
   padding: 10px;
   font-size: 18px;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
-  align-items: left;
 }
 .search-forms form input[type=submit] {
   width: 200px;
