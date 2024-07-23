@@ -4,9 +4,22 @@
         <title>Search</title>
     </head>
     <body>
-        <form action="https://google.com/search">
+        <div class="navigator"> 
+            <a href="image.html"> Image </a>
+            <a href="advanced.html"> Advanced </a>
+        </div>
+
+        <h1> Google Search </h1>
+        <form action="https://google.com/search" method="get">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
         </form>
+
+        <div>
+            <form action="https://google.com/search">
+                <input type="hidden" name="q">
+                <input type="submit" value="I'm feeling lucky">
+            </form>
+        </div>
     </body>
 </html>
